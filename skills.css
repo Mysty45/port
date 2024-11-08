@@ -1,0 +1,193 @@
+/* generall styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #25231b;
+    color: #d5d8de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    width: 100%;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #d5d8de;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, nav a.active {
+    color: #d5d8de;
+    border-bottom: 3px solid #8a7c64;
+}
+
+/* style skills */
+.skills-page {
+    width: 90%;
+    max-width: 1200px;
+    padding: 4rem 0;
+    text-align: center; /* senter */
+}
+
+.skill {
+    margin-bottom: 3rem;
+}
+
+.skill h2 {
+    font-size: 2.4rem;
+    color: #bcc4b1;
+    margin-bottom: 1rem;
+    text-align: center; /* center text */
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 500px; 
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%;
+    max-width: 100%; 
+    border-radius: 10px;
+}
+
+/* Button */
+.slider .prev, .slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+/* video */
+.video-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* My cariere */
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.column-container h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #bcc4b1;
+    margin-bottom: 1.5rem;
+}
+
+.position-card {
+    background-color: #444;
+    color: #d5d8de;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.4rem;
+    flex: 1 1 200px;
+    max-width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.position-card:hover {
+    transform: translateY(-5px);
+}
+
+
+@media (max-width: 768px) {
+    nav a {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+
+    .skill h2 {
+        font-size: 2rem;
+    }
+
+    .slider .prev, .slider .next {
+        font-size: 1.6rem;
+        padding: 0.8rem;
+    }
+
+    .position-card {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,169 @@
+/* Style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 70%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25231b;
+    color: #d5d8de;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #d5d8de;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    margin-right: 2rem;
+}
+
+nav a:hover,
+nav a.active {
+    color: #d5d8de;
+    border-bottom: 3px solid #8a7c64;
+}
+
+/* container */
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Card */
+.pricing-card {
+    background-color: #333;
+    color: #d5d8de;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    color: #8a7c64;
+    margin-bottom: 1rem;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-card ul li {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+/* Icons */
+.pricing-card ul li i {
+    font-size: 1.6rem;
+    color: #8a7c64;
+}
+
+/* Price */
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #bcc4b1;
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Button "velg" */
+button {
+    background-color: #8a7c64;
+    color: #d5d8de;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #bca18e;
+}
+
+/* Main card */
+.pricing-card.highlight {
+    background-color: #444;
+    border: 2px solid #8a7c64;
+}
+
+/* responsive  */
+@media (max-width: 995px) {
+    .pricing-table {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .pricing-card {
+        width: 100%;
+        margin-bottom: 2rem;
+        max-width: none;
+    }
+}
